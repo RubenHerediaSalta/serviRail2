@@ -15,7 +15,7 @@ const port = process.env.PORT;
 
 app.use(
   cors({
-    origin: "0.0.0.0",
+    origin: "*",
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
   })
