@@ -21,6 +21,10 @@ app.use(
   })
 );
 
+app.use("/", (req, res) => {
+  res.send("server corriendo");
+});
+
 app.use("/uploads/profiles", express.static("uploads/profiles"));
 app.use("/uploads/gigs", express.static("uploads/gigs"));
 
